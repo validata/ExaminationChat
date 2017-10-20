@@ -1,2 +1,2 @@
 # ExaminationChat
-Chat-server supporting multiple client. Tkinter, threading and sockets
+Chat-server supporting multiple clients. Tkinter, threading and sockets
