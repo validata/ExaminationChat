@@ -36,8 +36,6 @@ class Client(Frame):
         self.pack()
 
     def widget(self):
-        # don't assume that self.parent is a root window.
-        # instead, call `winfo_toplevel to get the root window
         self.winfo_toplevel().title("SERVER CHAT")
 
 def close_func():

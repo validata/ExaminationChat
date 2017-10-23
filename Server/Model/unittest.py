@@ -1,4 +1,5 @@
 from Server.Model.Server_UserClass import User
+import unittest
 
 User1 = User(1,'Me','MyNickname','MyPassword')
 print(User1.toString())

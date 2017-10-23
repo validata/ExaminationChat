@@ -1,6 +1,5 @@
 from tkinter import *
 
-
 class port_in ( Frame ):
     def __init__(self, parent):
         Frame.__init__ ( self, parent )
@@ -22,8 +21,6 @@ class port_in ( Frame ):
         self.pack ()
 
     def widget(self):
-        # don't assume that self.parent is a root window.
-        # instead, call `winfo_toplevel to get the root window
         self.winfo_toplevel ().title ( "server introduction" )
 
         def close_func():
