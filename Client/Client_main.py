@@ -1,5 +1,6 @@
 import socket
-from Client_threading import Client_send, Client_recv
+
+from Client.Client_threading import Client_send, Client_recv
 
 client_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
