@@ -14,7 +14,7 @@ class Client(Frame):
 
 
         self.label_1= Label ( self, text="DISPLAY: " )
-        self.label_2 = Label ( self, text="Write your message here to clients: :" )
+        self.label_2 = Label ( self, text="Write your message here to clients: " )
 
         self.button_1 = Button ( self, text="Send", background = "GREEN" )
         self.button_2 = Button ( self, text="close", background="white", command =close_func )
@@ -36,9 +36,8 @@ class Client(Frame):
         self.pack()
 
     def widget(self):
-        # don't assume that self.parent is a root window.
-        # instead, call `winfo_toplevel to get the root window
-        self.winfo_toplevel().title("SERVER CHAT")
+
+        self.winfo_toplevel().title("Client CHAT")
 
 def close_func():
     root.destroy ()
