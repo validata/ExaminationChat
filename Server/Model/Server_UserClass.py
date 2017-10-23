@@ -7,4 +7,5 @@ class User:
         self.password = password_
 
     def toString(self):
-        return self.id+" "+self.user+" "+self.nickname+" "+self.password
+        return_string = "ID: " + str(self.id) + " | User: "+ self.user + " | Nickname: "+ self.nickname + " | Password: "+ self.password
+        return return_string
