@@ -1,10 +1,19 @@
 import socket
-from Server_threading import Server_recv, Server_send
+
+from Server.Controller.Server_threading import Server_recv, Server_send
 
 server_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-server_sock.bind(('127.0.0.1', 9999))
-server_sock.listen()
+host = '127.0.0.1'
+port = 9999
+max_users = 9
+
+# try:
+server_sock.bind((host, port))
+#except socket.error as er:
+#    print(str(er))
+
+server_sock.listen(max_users)
 
 list_of_sockets = []
 while True:
