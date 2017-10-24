@@ -47,3 +47,9 @@ root = Tk ()
 root.geometry("800x340")
 window = Client(root)
 root.mainloop()
+
+# todo förslag på ändring och renare kod: ändra namnen på samtliga objekt. istället för entry1 kan den heta entry_display
+# todo entry2 kan likadant heta entry_user_input. lättare att hålla koll på vilket objekt som gör vad.
+# todo varför så höga row? tror att den hoppar över tomma rows, så använd den row som objektet ligger i istllet
+# todo lägg alla grid i ordning med row/column istället för objektstyp. blir svårt att hålla koll på placeringerna vid större projekt
+# todo display från chatten borde vara i tex en textruta istället för entry. entry anvnds ju vid användarinput, nu ska vi visa något

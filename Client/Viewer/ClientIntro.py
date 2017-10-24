@@ -42,6 +42,5 @@ root.geometry("200x200")
 window = iden_port(root)
 root.mainloop()
 
-
-
+# todo se kommentarer under Client_GUI
 

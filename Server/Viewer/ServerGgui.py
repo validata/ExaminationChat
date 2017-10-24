@@ -46,3 +46,5 @@ root = Tk ()
 root.geometry("800x340")
 window = Client(root)
 root.mainloop()
+
+# todo lite samma saker som under client. ändra lite namn så att det blir lättare att följa med i koden, byt display entry till textruta

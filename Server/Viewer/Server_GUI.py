@@ -9,6 +9,7 @@ class port_in ( Frame ):
 
         self.label_1 = Label ( self, text="port number:" )
         self.button_1 = Button ( self, text="start" )
+        close_button = Button(self, text="Close", command=self.close_func)
 
         self.entry_1 = Entry ( self )
 
@@ -16,15 +17,16 @@ class port_in ( Frame ):
 
         self.entry_1.grid ( row=0, column=1 )
 
-        self.button_1.grid ( row=1, column=1 )
+        self.button_1.grid ( row=1, column=0 )
+        close_button.grid(row=1, column=1)
 
         self.pack ()
 
     def widget(self):
         self.winfo_toplevel ().title ( "server introduction" )
 
-        def close_func():
-            root.destroy ()
+    def close_func(self):
+        root.destroy ()
 
 
 root = Tk ()
